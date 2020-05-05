@@ -1,0 +1,213 @@
+body{
+    margin: 0 auto;
+    padding: 0 0;
+}
+
+
+
+.navbar{
+    width: 100%;
+    height: 100px;
+    display: flex;
+}
+.navbar img{
+    padding: 20px;
+    width: 50%;
+
+}
+.navbar-collapse{
+    text-align: right;
+    width: 100%;
+}
+.navbar ul{
+    display: flex;
+    width: 100%;
+    
+    
+}
+.nav-item{
+    list-style: none;
+    padding: 5px;
+    
+}
+.home-wrap{
+    background-color: lightskyblue;
+    background-size: cover;
+    width: 100%;
+    text-align: center;
+}
+.landing p{
+   padding-top: 50px;
+}
+
+.leading {
+    background-size: cover;
+    height: 100px;
+    width: 100%;
+    text-align: center;
+}
+.landing img{
+    width: 50%;
+}
+.school{
+    width: 100%;
+}
+.row-padding{
+    display: flex;
+    padding: 20px;
+}
+.col-lg{
+    flex: 1;
+}
+.row-padding img{
+    width: 90%;
+}
+.narrow{
+    width: 100%;
+    text-align: center;
+}
+.price{
+    background-color: lightskyblue;
+
+}
+h5{
+    font-size: 30px;
+    width: 100%;
+}
+.Lesson-row{
+    width: 100%;
+    display: flex;
+}
+.Lesson-col{
+    text-align: center;
+    flex: 1;
+    
+}
+.Lesson img{
+    width: 50%;
+}
+.price{
+    text-align: center;
+}
+.clients{
+    background-color: lightskyblue;
+    width: 100%;
+    text-align: center;
+}
+.jumbotron{
+    width: 75%;
+    background-color: whitesmoke;
+    margin: 0 auto;
+}
+h1{
+    font-size: 50px;
+    padding: 30px;
+}
+
+.clients-row{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.clients-col{
+    width: 50%;
+
+}
+.clients-col img{
+    width: 70%;
+}
+.footer-row{
+    display: flex;
+    flex-direction: row;
+    margin: 30px;
+}
+
+footer img{
+width: 100%;
+}
+.col-img{
+    flex: 1;
+}
+footer img{
+    width: 100%;
+}
+.col-footer{
+    flex: 2;
+}
+
+footer li{
+    list-style: none;
+}
+span {
+    background: lightskyblue;
+    color: #fff;
+    display: inline-block;
+    padding: 5px;
+    width: 100%;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+@media screen and (max-width:800px){
+    .navbar li{
+        display: none;
+    }
+    .school{
+        width: 100%;
+    }
+   
+    .row-padding{
+        display: flex;
+        flex-direction: column;
+    }
+ 
+    .narrow{
+        width: 100%;
+        text-align: center;
+    }
+    
+    .col-lg{
+        width: 100%;
+    }
+    h5{
+        font-size: 15px;
+    }
+    .Lesson-row{
+        width: 100%;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .Lesson-col{
+        width: 100%;
+    }
+    .Lesson img{
+        width: 80%;
+    }
+    .jumbotron{
+        width: 85%;
+     
+    }
+    .clients-row{
+        flex-direction: column;
+    }
+    .clients-col{
+        width: 100%;
+    }
+    
+    .footer-row{
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+    }
+   
+    footer img{
+        width: 70%;
+    }
+    .col-img{
+        text-align: center;
+    }
+    
+    
+
+
+}
