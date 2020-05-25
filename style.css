@@ -1,33 +1,135 @@
-body{
+html,body{
     margin: 0 auto;
-    padding: 0 0;
+    padding: 0;
 }
 
 
-
-.navbar{
+header {
     width: 100%;
-    height: 100px;
-    display: flex;
+    position: relative;
 }
-.navbar img{
-    padding: 20px;
-    width: 50%;
 
-}
-.navbar-collapse{
-    text-align: right;
+.pfix{
     width: 100%;
+    position: fixed;
 }
+
+/* nav_menu */
+.nav{
+    position: absolute;
+    width: 100%;
+    left: -100%;
+    background: rgba(99, 99, 99,.95);
+    -webkit-transition: 1s;
+    transition: 1s;
+}
+.pfix ul{
+    margin: 0;
+    padding: 0;
+}
+
+.pfix li{
+    height: calc(90vh/6);
+    line-height: 100px;
+    list-style-type: none;
+    font-size: 3em;
+    text-align: center;
+}
+
+.pfix a{
+    display: block;
+    text-decoration: none;
+    color: #fff;
+}
+#target {
+    width: 40px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    cursor: pointer;
+    display: block;
+    -webkit-transition: 1s;
+    transition: 1s;
+}
+
+.target_inner{
+    width: 40px;
+    height: 30px;
+    position: relative;
+}
+.target_inner_line {
+    display: block;
+    width: 40px;
+    height: 5px;
+    background: #636363;
+    -webkit-transition: 1.5s;
+    transition: 1.5s;
+    border-radius: 50px;
+    position: absolute;
+}
+
+.target_inner_1 {
+    top: 0;
+}
+
+.target_inner_2 {
+    top: 18px;
+}
+
+.target_inner_3 {
+    top: 36px;
+}
+
+/* 動き */
+.fadein{
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+}
+
+.linea,.lineb,.linec{
+    background: #ffffff;
+}
+
+.linea {
+    -webkit-transform: rotate(225deg);
+    transform: rotate(225deg);
+    top: 13px;
+}
+
+.lineb {
+    opacity: 0;
+}
+
+.linec {
+    -webkit-transform: rotate(-225deg);
+    transform: rotate(-225deg);
+    top: 13px;
+}
+
+/* main
+main section{
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 100vh;
+} */
+
+
+
+
+
+
 .navbar ul{
     display: flex;
-    width: 100%;
+    padding: 0 10px;
+    float: right;
     
     
 }
 .nav-item{
     list-style: none;
-    padding: 5px;
+    padding: 0 10px;
     
 }
 .home-wrap{
@@ -40,12 +142,7 @@ body{
    padding-top: 50px;
 }
 
-.leading {
-    background-size: cover;
-    height: 100px;
-    width: 100%;
-    text-align: center;
-}
+
 .landing img{
     width: 50%;
 }
@@ -84,7 +181,7 @@ h5{
     
 }
 .Lesson img{
-    width: 50%;
+    width: 90%;
 }
 .price{
     text-align: center;
@@ -102,6 +199,7 @@ h5{
 h1{
     font-size: 50px;
     padding: 30px;
+    text-align: center;
 }
 
 .clients-row{
@@ -119,12 +217,10 @@ h1{
 .footer-row{
     display: flex;
     flex-direction: row;
-    margin: 30px;
+    margin: 20px;
 }
 
-footer img{
-width: 100%;
-}
+
 .col-img{
     flex: 1;
 }
@@ -133,6 +229,7 @@ footer img{
 }
 .col-footer{
     flex: 2;
+    padding:20px;
 }
 
 footer li{
@@ -143,13 +240,39 @@ span {
     color: #fff;
     display: inline-block;
     padding: 5px;
-    width: 100%;
     margin-bottom: 5px;
     border-radius: 5px;
+    width: 100%;
 }
-@media screen and (max-width:800px){
-    .navbar li{
+.btnTop{
+    font-size: 50px;
+    padding: 0 20px;
+    text-align: right;
+    display: block;
+} 
+ /* .btnTop{ 
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    font-size: 48px;
+    padding: 0 8px 48px 0;
+    color: #000;
+    transform: translateY(100%);
+    opacity: 0;
+    transition: transform .5s,opacity .5s;
+  } 
+   .btnTop.active{
+    transform: translateY(0%);
+    opacity: 1;
+  }  */
+
+@media screen and (max-width:650px){
+    .navbar{
         display: none;
+    }
+    .navbar li{
+        display: inline;
+        font-size: 8px;
     }
     .school{
         width: 100%;
@@ -169,7 +292,7 @@ span {
         width: 100%;
     }
     h5{
-        font-size: 15px;
+        font-size: 20px;
     }
     .Lesson-row{
         width: 100%;
@@ -201,11 +324,12 @@ span {
     }
    
     footer img{
-        width: 70%;
+        width: 50%;
     }
     .col-img{
         text-align: center;
     }
+
     
     
 
