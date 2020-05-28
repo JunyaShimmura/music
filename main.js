@@ -13,27 +13,26 @@ function hamburger() {
     　　　　hamburger();
       });
   }
-$(function() {
-    
-    var h = $(window).height();
-    $(window).on("scroll",function(){
-      var s = $(window).scrollTop();
-      if(h/2 < s){
-        $(".btnTop").addClass("active");
-        console.log('up')
-      }else{
-        $(".btnTop").removeClass("active");
-      }
-    })
+
+	check5.addEventListener('click',() => {
+    check();
+  });
+let text=document.querySelector('input' );
+let text2=document.querySelector('textarea' );
+
+function check(){
+if (text2.value == ""){
+  alert('お問い合わせ内容を入力してください');    
+}else{
+  alert(text.value + text2.value )
+}
+};
+
+
   
     $(".btnTop").on("click",function(){
       console.log("i")
-      /*
-      htmlとbody要素のscrollTopを500ミリ秒かけて0にする（スクロールを戻す）。
-      ＄("html")だけ$("body")だけで良いのでは無いか？と思うかもしれないが、
-      IEやfirefoxなど色んなブラウザで同じ効果を得るための慣例
-      */
+    
       $("html,body").animate({scrollTop: 0 }, 500, "swing");
   
     });
-});
