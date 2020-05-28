@@ -178,7 +178,8 @@ h1{
 .footer-row{
     display: flex;
     flex-direction: row;
-    margin: 20px;
+    padding: 0 5px;
+
 }
 
 
@@ -190,9 +191,10 @@ footer img{
 }
 .col-footer{
     flex: 2;
-    padding:20px;
 }
-
+footer ul{
+    padding: 0;
+}
 footer li{
     list-style: none;
 }
@@ -201,9 +203,16 @@ span {
     color: #fff;
     display: inline-block;
     padding: 5px;
-    margin-bottom: 5px;
     border-radius: 5px;
-    width: 100%;
+    width: 95%;
+}
+
+form p{
+    font-size: 12px;
+    margin: 0;
+}
+input,textarea {
+    margin: 0 20px;
 }
 .btnTop{
     font-size: 50px;
