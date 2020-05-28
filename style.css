@@ -211,6 +211,10 @@ form p{
     font-size: 12px;
     margin: 0;
 }
+form textarea{
+    width: 70%;
+    padding: 10px;
+}
 input,textarea {
     margin: 0 20px;
 }
